@@ -15,12 +15,12 @@ The two workers are also deployable, in the `src/worker` directory, use `cf push
 It's vagrant and ansible.  Type `vagrant up` and your machine will be on `192.168.121.8`.
 
 Start some services:
-  - `sudo systemctl start couchdb.service
-  - `sudo systemctl start requestbin.service
-  - `sudo systemctl start guestbook-web.service
-  - `sudo systemctl start guestbook-comment-worker.service
-  - `sudo systemctl start guestbook-notification-worker.service
-  - `sudo systemctl start couchdb-haproxy.service
+  - `sudo systemctl start couchdb.service`
+  - `sudo systemctl start requestbin.service`
+  - `sudo systemctl start guestbook-web.service`
+  - `sudo systemctl start guestbook-comment-worker.service`
+  - `sudo systemctl start guestbook-notification-worker.service`
+  - `sudo systemctl start couchdb-haproxy.service`
 
 You now have a web interface http://192.168.121.8:8080/ and fauxton http://192.168.121.8:5984/_utils/# and rabbit http://192.168.121.8:15672 and requestbin http://192.168.121.8:8001.
 
